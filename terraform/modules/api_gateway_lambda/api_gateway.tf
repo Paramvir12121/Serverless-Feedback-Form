@@ -12,7 +12,7 @@ resource "aws_api_gateway_resource" "api_resource_feedback" {
 resource "aws_api_gateway_method" "api_method_feedback" {
   rest_api_id   = aws_api_gateway_rest_api.api_gateway.id
   resource_id   = aws_api_gateway_resource.api_resource_feedback.id
-  http_method   = "GET"
+  http_method   = "POST"
   authorization = "NONE"
 }
 
@@ -24,17 +24,6 @@ resource "aws_api_gateway_integration" "api_intigration" {
   type                    = "AWS_PROXY"
   uri                     = aws_lambda_function.restapi-connected-function.invoke_arn
   # passthrough_behavior = "WHEN_NO_MATCH"
-}
-
-
-# resource "aws_api_gateway_deployment" "api_deployment" {
-#   depends_on  = [aws_api_gateway_integration.api_intigration]
-#   rest_api_id = aws_api_gateway_rest_api.api_gateway.id
-#   stage_name  = "dev" # Change to your desired stage name
-# }
-
-output "api_gateway_url" {
-  value = aws_api_gateway_deployment.feedback.invoke_url
 }
 
 resource "aws_lambda_permission" "api_gw" {
