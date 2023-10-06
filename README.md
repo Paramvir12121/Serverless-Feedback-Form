@@ -69,9 +69,6 @@ You can modify the feedback form or the processing logic by updating the files i
 
 Pull requests are welcome. For major changes, please open an issue first to discuss your proposal.
 
-## ⚖️ License
-
-This project is under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ---
 
