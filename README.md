@@ -13,6 +13,7 @@ This repository contains Terraform configurations to automate the deployment of 
 - [Customization](#customization)
 - [Contributing](#contributing)
 
+<a name="prerequisites"></a>
 ## 🔍 Prerequisites
 
 Ensure you have the following:
@@ -21,6 +22,7 @@ Ensure you have the following:
 - [AWS CLI](https://aws.amazon.com/cli/) configured with appropriate permissions
 - [Terraform](https://learn.hashicorp.com/terraform/getting-started/install.html)
 
+<a name="quick-start"></a>
 ## 🚀 Quick Start
 
 1. **Clone the Repository**
@@ -47,6 +49,7 @@ Ensure you have the following:
 
 4. Once deployed, you can access the feedback form via the S3 bucket URL provided in the outputs.
 
+<a name="repository-structure"></a>
 ## 📁 Repository Structure
 - `terraform` : Primary directory containing terraform code. 
     - `lambda_functions` : Directory containing lambda function code.
@@ -64,7 +67,7 @@ Ensure you have the following:
 - **DynamoDB**: Stores feedback data.
 - **SNS Topic**: Sends notifications based on specific conditions or feedback content.
 
-## Customization
+## 🔧 Customization
 
 You can modify the feedback form or the processing logic by updating the files in the `assets/` directory and the Lambda function code respectively. Ensure you adjust Terraform configurations as necessary.
 
