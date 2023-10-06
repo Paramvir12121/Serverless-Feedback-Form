@@ -2,7 +2,7 @@
 
 This repository contains Terraform configurations to automate the deployment of a serverless feedback form on AWS. Feedback submitted through the form is processed by a Lambda function, stored in DynamoDB, and an SNS notification is triggered if necessary. The feedback form webpage is hosted on an S3 bucket and is connected to the REST API Gateway.
 
-### ! Please not that this Repository is WORK IN PROGRESS and is NOT Complete in its function.
+### ! Please note that this Repository is WORK IN PROGRESS and is NOT Complete in its function.
 
 ## 📋 Table of Contents
 
@@ -49,13 +49,13 @@ Ensure you have the following:
 4. Once deployed, you can access the feedback form via the S3 bucket URL provided in the outputs.
 
 ## 📁 Repository Structure
-- `terraform` : Primary directory containing terraform code.
-- `website` : Primary directory containg html website to be uploaded and hosted in S3 bucket. 
-- `lambda_functions` : Directory containing lambda function code.
-- `modules` : Directory containg terraform module blocks.
-- `main.tf`: Primary Terraform configuration file for AWS resources.
-- `variables.tf`: Contains variable definitions.
-- `outputs.tf`: Output configurations post `terraform apply`.
+- `terraform` : Primary directory containing terraform code. 
+    - `lambda_functions` : Directory containing lambda function code.
+    - `modules` : Directory containg terraform module blocks.
+        - `main.tf`: Primary Terraform configuration file for AWS resources.
+        - `variables.tf`: Contains variable definitions.
+        - `outputs.tf`: Output configurations post `terraform apply`.
+- `website` : Primary directory containg html website to be uploaded and hosted in S3 bucket.
   
 ## 🌐 Architecture Overview
 
