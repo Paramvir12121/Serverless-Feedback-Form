@@ -12,7 +12,6 @@ This repository contains Terraform configurations to automate the deployment of 
 - [Architecture Overview](#architecture-overview)
 - [Customization](#customization)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## 🔍 Prerequisites
 
