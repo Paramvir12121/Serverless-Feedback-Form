@@ -64,7 +64,7 @@ Ensure you have the following:
 - **DynamoDB**: Stores feedback data.
 - **SNS Topic**: Sends notifications based on specific conditions or feedback content.
 
-## 🔧 Customization
+## Customization
 
 You can modify the feedback form or the processing logic by updating the files in the `assets/` directory and the Lambda function code respectively. Ensure you adjust Terraform configurations as necessary.
 
