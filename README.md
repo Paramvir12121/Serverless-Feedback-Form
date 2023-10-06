@@ -58,7 +58,8 @@ Ensure you have the following:
         - `variables.tf`: Contains variable definitions.
         - `outputs.tf`: Output configurations post `terraform apply`.
 - `website` : Primary directory containg html website to be uploaded and hosted in S3 bucket.
-  
+
+<a name="architecture-overview"></a>
 ## 🌐 Architecture Overview
 
 - **S3 Bucket**: Hosts the feedback form webpage.
@@ -67,10 +68,12 @@ Ensure you have the following:
 - **DynamoDB**: Stores feedback data.
 - **SNS Topic**: Sends notifications based on specific conditions or feedback content.
 
+<a name="customization"></a>
 ## 🔧 Customization
 
 You can modify the feedback form or the processing logic by updating the files in the `assets/` directory and the Lambda function code respectively. Ensure you adjust Terraform configurations as necessary.
 
+<a name="contributing"></a>
 ## 👥 Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss your proposal.
