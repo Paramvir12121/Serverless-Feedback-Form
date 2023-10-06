@@ -29,6 +29,7 @@ Ensure you have the following:
     ```bash
     git clone https://github.com/Paramvir12121/Serverless-Feedback-Form.git
     cd Serverless-Feedback-Form
+    cd terraform
     ```
 
 2. **Initialize Terraform**
@@ -48,7 +49,10 @@ Ensure you have the following:
 4. Once deployed, you can access the feedback form via the S3 bucket URL provided in the outputs.
 
 ## 📁 Repository Structure
-
+- `terraform` : Primary directory containing terraform code.
+- `website` : Primary directory containg html website to be uploaded and hosted in S3 bucket. 
+- `lambda_functions` : Directory containing lambda function code.
+- `modules` : Directory containg terraform module blocks.
 - `main.tf`: Primary Terraform configuration file for AWS resources.
 - `variables.tf`: Contains variable definitions.
 - `outputs.tf`: Output configurations post `terraform apply`.
