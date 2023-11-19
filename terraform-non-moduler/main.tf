@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "us-west-2" # Change to your preferred region
-}
-
 # Assuming the DynamoDB table and S3 bucket are already created and configured
 
 # IAM Role for Lambda
