@@ -7,3 +7,8 @@ resource "aws_dynamodb_table" "feedback" {
     type = "S"
   }
 }
+
+variable "table_name" {
+  type = string
+
+}
