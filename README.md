@@ -30,8 +30,17 @@ Ensure you have the following:
     ```bash
     git clone https://github.com/Paramvir12121/Serverless-Feedback-Form.git
     cd Serverless-Feedback-Form
+    ```
+    If you want to check out the modular deployment of the code, go to:
+    ```
     cd terraform
     ```
+
+    For non-modular Deployment, go to:
+    ```
+    cd terraform-non-modular
+    ```
+    Both use basically the same code but the the modular code uses the principles of Orthogonality to make it easily reusable. On the other hand, Non-Modular Code is simpler.
 
 2. **Initialize Terraform**
 
