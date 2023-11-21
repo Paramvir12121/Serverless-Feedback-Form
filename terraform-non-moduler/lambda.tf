@@ -1,6 +1,6 @@
 resource "aws_lambda_function" "lambda" {
-  filename         = var.lambda_filename
-  function_name    = var.function_name
+  filename         = "lambda"
+  function_name    = "feedback"
   role             = aws_iam_role.lambda-iam.arn
   handler          = var.handler
   runtime          = var.runtime

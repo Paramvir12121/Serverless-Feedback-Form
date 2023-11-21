@@ -9,8 +9,8 @@ module "s3_bucket_webpages" {
 
 
 resource "aws_s3_bucket" "bucket" {
-  bucket = var.bucket_name
-  tags   = var.tags
+  bucket = "feedback-form-0.0.1"
+  tags   = local.tags
 
 }
 
@@ -49,7 +49,7 @@ resource "aws_s3_bucket_object" "object" {
   key          = each.value
   source       = "../website/${each.value}"
   etag         = filemd5("../website/${each.value}")
-  tags         = var.tags
+  tags         = local.tags
   content_type = "text/html"
 }
 
